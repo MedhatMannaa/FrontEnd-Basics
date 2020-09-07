@@ -2,28 +2,7 @@
 <html>
   <head>
     <title>My HTML Page</title>
-	
-	<style>
-		   h1{ 
-		   	   background-color:Tomato;color:blue;
-		   	 }
-		   h2{ 
-		   	   background-color:Orange;color:red;}
-		   h3{ 
-		   	   background-color:DodgerBlue;color:gold;
-			 }
-		   h4{ 
-		   	   background-color:MediumSeaGreen;
-			 }
-		   h5{ 
-		   	   background-color:Gray;
-			 }
-		   h6{ 
-		   	   background-color:Violet;
-			 }
-		   body{ background-color: aqua;
-		     }
-	</style>
+	<link rel="stylesheet" href="style.css">
   </head>
   <body>
     -------------------------------------
@@ -32,7 +11,7 @@
     <p>This is my First Paragraph in the Index Page.</p>
 	-------------------------------------
 <!-- comment 2 Heading with Background-->
-	<div>
+	<div class="heading_background">
   		 <h1>This is example for heading 1</h1>
      	 <h2>This is example for heading 2</h2>
       	 <h3>This is example for heading 3</h3>
@@ -51,7 +30,7 @@
 	</div>
     -------------------------------------
 <!-- comment 4 Bold -->
-	<div>
+	<div id="bold_italic">
 		  <p>
     	  	 <b>
          	 	 This paragraph in bold letters.
@@ -69,14 +48,14 @@
 	</div>
 	-------------------------------------
 <!-- comment 6 Block -->
-	<div>
+	<div class="block">
   		 <blockquote cite="http://www.worldwildlife.org/who/index.html">
      	 	   this is example for the block words in html
     	 </blockquote>
 	</div>
 	-------------------------------------
 <!-- comment 7 Link -->
-    <div>
+    <div id="link">
         	<p>
         	   <a href="http://www.google.com" target="_self">
         	   Wellcome to GOOGLE - self
@@ -107,7 +86,7 @@
 	 </div>
 	-------------------------------------
 <!-- comment Table -->
-     <div>
+     <div id="table">
         	<table style="width:30%">
                 <tr>
                   <th>Programming Language</th>
@@ -128,7 +107,7 @@
 	 </div>
 	-------------------------------------
 <!-- comment 9 List -->
-     <div>
+     <div class="list">
         	<ul>
               <li>Coffee</li>
               <li>Tea</li>
@@ -140,9 +119,27 @@
               <li>Milk</li>
             </ol>	 
 	 </div>
------------------------------------------		
+-----------------------------------------	
+<!-- comment 10 Form -->
+     <div class="form">
+            <form action="url" method="post">
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname"><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname">
+			  <select name="job" id="job">
+                <option value="volvo">IT Manager</option>
+                <option value="saab">Commercial Suppurt</option>
+                <option value="mercedes">Finance</option>
+                <option value="audi">Call Center</option>
+				<option value="audi">Driver</option>
+              </select>
+			  <input type="submit" value="Save Data" />
+            </form> 
+	 </div>
+-----------------------------------------			
 <!-- comment 11 Image -->	
-	 <div>
+	 <div id="image">
         	<p> 
         	   <img src="telephone.jpg" alt="Telephone Image" />
         	</p>	 
